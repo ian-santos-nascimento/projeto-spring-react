@@ -13,10 +13,10 @@ import java.util.stream.Collectors;
 public class SellerService {
 
     @Autowired
-    private SellerRepository sellerRepository;
+    private SellerRepository repository;
 
     public List<SellerDTO> findAll(){
-     List<Seller> result =  sellerRepository.findAll();
+     List<Seller> result =  repository.findAll();
      return result.stream().map( x -> new SellerDTO(x)).collect(Collectors.toList());
     }
 }

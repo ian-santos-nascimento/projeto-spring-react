@@ -12,7 +12,7 @@
 	<artifactId>dsvendas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dsvendas</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Projeto desenvolvido na semana React da Dev Superior</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -62,3 +62,4 @@
 	</build>
 
 </project>
+	

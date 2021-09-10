@@ -5,23 +5,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="tb_sellers")
+@Table(name = "tb_sellers")
 public class Seller {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
+    private String name;
+    
     @OneToMany(mappedBy = "seller")
     private List<Sale> sales = new ArrayList<>();
 
     public Seller() {
     }
 
-    public Seller(Long id, String nome) {
+    public Seller(Long id, String name) {
         this.id = id;
-        this.nome = nome;
+        this.name = name;
     }
 
     public Long getId() {
@@ -32,12 +32,12 @@ public class Seller {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Sale> getSales() {
