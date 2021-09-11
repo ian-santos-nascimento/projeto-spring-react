@@ -14,12 +14,12 @@ const DashBoard =() => {
       <div className="row px-3">
 
         <div className= "col-sm-6">
-          <h4 className="text-center text-secundary">Sucesso(%)</h4>
-          <DonutChart/>
+          <h4 className="text-center text-secundary">Taxa de Sucesso(%)</h4>
+          <BarChart/>
         </div>
         <div className= "col-sm-6">
           <h2>Todas as vendas</h2>
-          <BarChart/>
+          <DonutChart/>
         </div>
 
         <div className="py-3 ">
